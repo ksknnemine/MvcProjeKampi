@@ -9,7 +9,7 @@
 @using (Html.BeginForm("AddWriter", "Writer", FormMethod.Post))
 {
 <div class="form-group">
-    @Html.Label("Yazar adı")
+    @Html.Label("Yazar Adı")
     @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control" })
     @Html.ValidationMessageFor(x => x.WriterName)
     <br />

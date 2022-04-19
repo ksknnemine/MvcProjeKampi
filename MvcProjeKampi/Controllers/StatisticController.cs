@@ -26,7 +26,7 @@ namespace MvcProjeKampi.Controllers
 
             var categoryTrue = _context.Categories.Count(x => x.CategoryStatus == true);
             var categoryFalse = _context.Categories.Count(x => x.CategoryStatus == false);
-            ViewBag.categoryMinus = (categoryTrue - categoryFalse);
+            ViewBag.categoryMinus = (categoryTrue - categoryFalse).ToString();
 
             return View();
         }
